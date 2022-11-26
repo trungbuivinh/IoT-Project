@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/logo_hcmut" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="IOT PROJECT"
+            android:gravity="center"
+            android:textColor="#ff7bb1"
+            android:textSize="40dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtTemperature"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#e4ecbf"
+            android:text="28°C"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#28251d"
+            android:gravity="center"
+            android:layout_margin="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtHumidity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#c4d8e2"
+            android:text="70%"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#28251d"
+            android:gravity="center"
+            android:layout_margin="20dp">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtlight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffbf"
+            android:text="10000 Lux"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#28251d"
+            android:gravity="center"
+            android:layout_margin="20dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnTempChart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Temp Chart"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#28251d"
+            android:backgroundTint="#e4ecbf"
+            android:gravity="center"
+            android:layout_margin="20dp">
+
+        </Button>
+
+    </LinearLayout>
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/btnLED"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        app:textOn = "BẬT"
+        app:textOff = "TẮT"
+        app:on="false"
+        app:colorBorder="#28251d"/>
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/btnPUMP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        app:textOn = "BẬT"
+        app:textOff = "TẮT"
+        app:on="false"
+        app:colorBorder="#28251d"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+        <TextView
+            android:id="@+id/txtAi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="Đeo khẩu trang"
+            android:gravity="center"
+            android:textColor="#28251d"
+            android:textSize="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>
