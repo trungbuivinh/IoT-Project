@@ -22,8 +22,8 @@ public class MQTTHelper {
         "tung_tran2401/feeds/nutnhan1", "tung_tran2401/feeds/nutnhan2", "tung_tran2401/feeds/ai" };
 
         final String clientId = "12375678";
-        final String username = "tung_tran2401";
-        final String password = "aio_CFJk02FPLOFiUHPxOxpoPyXU6W3x";
+        final String username = "";
+        final String password = "";
 
 
     final String serverUri = "tcp://io.adafruit.com:1883";
