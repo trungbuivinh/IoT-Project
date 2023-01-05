@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LightFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5">
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="70dp"
+                android:textSize="28sp"
+                app:on="false"
+                app:colorBorder="@color/colorAccent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5">
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="70dp"
+                android:textSize="28sp"
+                app:on="false"
+                app:colorBorder="@color/colorAccent"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
