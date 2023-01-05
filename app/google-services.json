@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "323032337918",
+    "firebase_url": "https://lab-iot-2442b-default-rtdb.firebaseio.com",
+    "project_id": "lab-iot-2442b",
+    "storage_bucket": "lab-iot-2442b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323032337918:android:5755263c6b5269ebf244af",
+        "android_client_info": {
+          "package_name": "com.example.iotproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323032337918-mbhhof8l7ltinb4bhbhgnt3m45l938om.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcpiUBOk4SJXzpd2Eb7rLR5vSlH6XMUXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323032337918-mbhhof8l7ltinb4bhbhgnt3m45l938om.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
