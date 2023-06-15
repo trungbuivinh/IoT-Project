@@ -71,14 +71,14 @@ public class TempChart extends AppCompatActivity {
 
             @Override
             public void messageArrived(String topic, MqttMessage message) throws Exception {
-                if(topic.contains("cambien1")){
+                if(topic.contains("dadn.cambien-anhsang")){
                     txtTemp1 = message.toString();
                     txtTemp2 = Float.parseFloat(txtTemp1);
 
                     dataValues2.add(new Entry(i, txtTemp2));
                     i++;
 
-                    LineDataSet lineDataSet1 = new LineDataSet(dataValues2, "Data Set");
+                    LineDataSet lineDataSet1 = new LineDataSet(dataValues2, "Temperature");
                     ArrayList<ILineDataSet> dataSets = new ArrayList<>();
                     dataSets.add(lineDataSet1);
 

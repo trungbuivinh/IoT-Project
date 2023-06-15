@@ -73,14 +73,14 @@ public class HumiChart extends AppCompatActivity {
 
             @Override
             public void messageArrived(String topic, MqttMessage message) throws Exception {
-                if(topic.contains("cambien3")){
+                if(topic.contains("dadn.cambien-doamdat")){
                     txtHumi1 = message.toString();
                     txtHumi2 = Float.parseFloat(txtHumi1);
 
                     dataValues2.add(new Entry(i, txtHumi2));
                     i++;
 
-                    LineDataSet lineDataSet1 = new LineDataSet(dataValues2, "Data Set");
+                    LineDataSet lineDataSet1 = new LineDataSet(dataValues2, "Humidity");
                     ArrayList<ILineDataSet> dataSets = new ArrayList<>();
                     dataSets.add(lineDataSet1);
 

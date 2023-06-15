@@ -86,9 +86,9 @@ public class LightFragment extends Fragment {
             @Override
             public void onSwitched(ToggleableView toggleableView, boolean isOn) {
                 if(isOn){
-                    sendDataMQTT("tung_tran2401/feeds/nutnhan1","1");
+                    sendDataMQTT("trungbui2405/feeds/dadn.led","1");
                 }else{
-                    sendDataMQTT("tung_tran2401/feeds/nutnhan1","0");
+                    sendDataMQTT("trungbui2405/feeds/dadn.led","0");
                 }
             }
         });
@@ -97,9 +97,9 @@ public class LightFragment extends Fragment {
             @Override
             public void onSwitched(ToggleableView toggleableView, boolean isOn) {
                 if(isOn){
-                    sendDataMQTT("tung_tran2401/feeds/nutnhan2","1");
+                    sendDataMQTT("trungbui2405/feeds/dadn.maybom","1");
                 }else{
-                    sendDataMQTT("tung_tran2401/feeds/nutnhan2","0");
+                    sendDataMQTT("trungbui2405/feeds/dadn.maybom","0");
                 }
             }
         });

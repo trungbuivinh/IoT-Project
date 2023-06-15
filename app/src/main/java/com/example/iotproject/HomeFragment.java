@@ -123,9 +123,9 @@ public class HomeFragment extends Fragment {
 
             @Override
             public void messageArrived(String topic, MqttMessage message) throws Exception {
-                if(topic.contains("cambien1")){
+                if(topic.contains("dadn.cambien-anhsang")){
                     txtTemp.setText(message.toString()+"℃");
-                }else if(topic.contains("cambien2")){
+                }else if(topic.contains("dadn.cambien-doamdat")){
                     txtHumi.setText(message.toString()+"%");
                 }else if(topic.contains("ai")) {
                     txtAi.setText(message.toString());
